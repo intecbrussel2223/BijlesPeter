@@ -22,7 +22,7 @@ namespace ProductVerkoop
             Console.Write("Wat is de prijs ");
             prijs = decimal.Parse(Console.ReadLine());
             Console.Write("Geef de btw in aub ");
-            btw = decimal.Parse(Console.ReadLine());
+            btw = Convert.ToDecimal(Console.ReadLine());
             btwWaarde = prijs * btw /100;
             prijsMetBtw = btwWaarde + prijs;
             Console.WriteLine($"{product} de prijs zonder btw" +
